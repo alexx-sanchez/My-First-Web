@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+h1, h2, h3 {
+    margin: 0px;
+}
+
+.titulos {
+    color: rgb(238, 255, 0);
+}
+
+
+#logo {
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transform: none;
+}
+
+header {
+    background: #000000;
+    color: black;
+    width: 100%;
+    height: 250px;
+
+    display: grid;
+    place-items: center;  
+    text-align: center;
+}
+
+nav {
+    margin: 10px;
+    align-self: self-end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: rgb(246, 255, 122);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(117, 117, 117);
+}
+
+/*  PELICULAS INICIO  */
+.peliculas {
+    padding: 30px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.peliculas h1 {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.peliculas-container {
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.peliculas article {
+    width: 20%;
+    margin: 1px;
+    align-items: baseline;
+    height:600px;
+}
+
+.peliculas article p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.peliculas article h2 {
+    margin: 0px;
+    padding-left: 5px;
+    background: rgb(246, 255, 122);
+    font-weight: normal;
+    color: black;
+}
+
+.peliculas article img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;   
+}
+
+/*  PELICULAS FINAL  */
+
+/*  ACTORES INICIO  */
+.actores article img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.actores {
+    height: 250px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.actores h1 {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.actores h2 {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.actores p {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.actores-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actores-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*  ACTORES FINAL  */
+
+/*  FESTIVALES INICIO  */
+.festivals h3 {
+    color: rgb(246, 255, 122);
+}
+.festivals {
+    background: rgb(43, 43, 43);
+    color: white;
+    padding: 30px;
+
+}
+
+.festivals img {
+    width: 90%; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-top: 20px;
+    transform: none;
+}
+
+.festival-list ul {
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
+}
+/*  FESTIVALES FINAL  */
+
+/*  SERIES INICIO  */
+
+.series h2, a {
+    color: rgb(246, 255, 122);
+    text-decoration: none;
+}
+.series {
+    padding: 30px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.series h1 {
+    margin: 10px;
+}
+
+.series-list {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.series-list article {
+    width: 17%;
+    margin: 10px;
+}
+
+.series-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/*  SERIES FINAL  */
+
+/*  CONTENIDO JUNTO INICIO  */
+.publi-i-content {
+    display: flex;
+
+    width: 100%;
+}
+
+.publi-i-content .festivals {
+    width: 25%;
+}
+
+.publi-i-content .series {
+    width: 75%;
+}
+
+/*  CONTENIDO JUNTO FINAL  */
+
+/*  MAS VISTO INICIO  */
+.masvisto h1 {
+    justify-self: center;
+    margin-bottom: 20px;
+}
+.masvisto {
+    flex-direction: column;
+    background-color: rgb(43, 43, 43);
+    padding: 30px;
+}
+
+.container-masvisto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-masvisto img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;   
+    border-radius: 10%;
+}
+
+.imagen-con-numero {
+    position: relative;  /* Establece el contenedor como relativo para poder posicionar elementos dentro */
+    display: inline-block;
+}
+
+.imagen {
+    width: 100%;  /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto;
+}
+
+.numero {
+    position: absolute;  /* Permite posicionar el número de forma absoluta */
+    top: 70%;  /* Posiciona el número verticalmente en el medio */
+    left: 25%;  /* Posiciona el número horizontalmente en el medio */
+    transform: translate(-50%, -50%);  /* Ajusta el número para centrarlo completamente */
+    font-size: 3rem;  /* Tamaño del número, puedes ajustarlo */
+    color: black;  /* Color del número, ajusta según tu imagen */
+    font-weight: bold;  /* Estilo del texto */
+    background-color: rgba(255, 255, 255, 0.5);  /* Fondo semi-transparente detrás del número */
+    border-radius: 5px;  /* Bordes redondeados */
+    margin: 0px;
+    padding: 0px;
+}
+/*  MAS VISTO FINAL  */
+
+/*  FOOTER INICIO  */
+footer {
+    background-color: black;
+    color: white;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(246, 255, 122);
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.container-footer nav {
+    margin: 0px;
+}
+/*  FOOTER FINAL  */

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta property="og:description" content="La millor pàgina web per trobar l'actualitat quant a sèries, pel·lícules i més!!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Alex Sanchez">
+        <link rel="stylesheet" href="/CSS/form-style.css">
+        <title>ITBflix</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="/imagenes/Logos/ITBflix-20-11-2024.png" alt="logo" id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ITBflix</a></li>
+                    <li><a href="index.html#peliculas">Pel·lícules</a></li>
+                    <li><a href="index.html#series">Series</a></li>
+                    <li><a href="index.html#festivals">Festivals</a></li>
+                    <li><a href="listado.html">Llistat de pelicules</a></li>
+                    <li><a href="form.html">Dona't d'alta</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <article>
+                    <h1>Formulari d'Alta</h1>
+                    <form method="GET">
+                        <label for="nombre">Nom complet: </label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <br><br>
+
+                        <label for="email">Correu electrònic:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br><br>
+
+                        <label for="password">Contrasenya:</label>
+                        <input type="password" id="password" name="password" minlength="4" required>
+                        <br><br>
+
+                        <label for="fecha_nacimiento">Data de naixement:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                        <br><br>
+
+                        <label>Gènere:</label>
+                        <input type="radio" id="genero_masculino" name="genero" value="Masculí">
+                        <label for="genero_masculino">Masculí</label>
+                        <input type="radio" id="genero_femenino" name="genero" value="Femení">
+                        <label for="genero_femenino">Femení</label>
+                        <br><br>
+
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="es">Espanya</option>
+                            <option value="mx">Mèxic</option>
+                            <option value="ar">Argentina</option>
+                            <option value="cl">Xile</option>
+                            <option value="co">Colòmbia</option>
+                        </select>
+                        <br><br>
+
+                        <label>
+                            <input type="checkbox" name="aceptar_terminos" required>
+                            Accepto els termes i condicions
+                        </label>
+                        <br><br>
+
+                        <button type="submit">Registrar-se</button>
+                    </form>
+                </article>
+            </section>    
+        </main>
+
+        <footer>
+                <nav>
+                    <a href="https://www.facebook.com/itecbcn/" target="_blank"><img src="/imagenes/Logos/facebook.webp" alt="Facebook logo"></a>
+                    <a href="https://twitter.com/iTecBcn/" target="_blank"><img src="/imagenes/Logos/x.jpg" alt="X logo"></a>
+                    <a href="https://github.com/ITEC-BCN" target="_blank"><img src="/imagenes/Logos/git2.jpg" alt="GitHub logo"></a>
+                    <a href="https://www.instagram.com/iTecBcn/" target="_blank"><img src="/imagenes/Logos/Instagram.webp" alt="Instagram logo"></a>
+                </nav>
+    
+                <address>
+                    <a href="https://www.google.com/maps/place/Institut+Tecnol%C3%B2g+de+Barcelona/@41.4534225,2.18629,815m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12a4bcfdad2100a9:0x3c4e7db0a61a83e0!8m2!3d41.4534225!4d2.18629!16s%2Fg%2F11b6c_s6qy?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        Carrer d'Aiguablava, 121, Nou Barris, 08033 Barcelona
+                    </a>
+                </address>
+    
+                <a href="https://www.ovtt.org/recursos/derechos-de-autor-o-copyright/" target="_blank">
+                    <p>Protected by Copyright©</p>
+                </a>    
+        </footer>
+    </body>
+</html>

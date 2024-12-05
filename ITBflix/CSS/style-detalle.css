@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0px;
+}
+
+.titulos {
+    color: rgb(238, 255, 0);
+}
+
+
+#logo {
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transform: none;
+}
+
+header {
+    background: #000000;
+    color: black;
+    width: 100%;
+    height: 250px;
+
+    display: grid;
+    place-items: center;  
+    text-align: center;
+}
+
+nav {
+    margin: 10px;
+    align-self: self-end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: rgb(246, 255, 122);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(117, 117, 117);
+}
+
+
+/*  MAIN  */
+
+section {
+    background-color: darkgrey;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.article-detalle {
+    background-color: black;
+    color: white;
+    width: 80%;
+    padding: 50px;
+    display: flex;
+}
+
+.text-main-container {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.text-main-container h1 {
+    color: black;
+    font-size: 30px;
+}
+
+.text-container {
+    padding: 10px;
+    display: flex;
+}
+
+.section-containers {
+    display: flex;
+}
+
+.text-section1 {
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.text-section2 {
+    margin: 10px;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-section2 ul {
+    list-style: circle;
+}
+
+.actores-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-actores {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lista-actores article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actores-section img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.actores-section p {
+    font-size: 20px;
+}
+
+.actores-section article {
+    margin: 20px;
+}
+/*  MAIN  */
+
+/*  FOOTER INICIO  */
+footer {
+    background-color: black;
+    color: white;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(246, 255, 122);
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.container-footer nav {
+    margin: 0px;
+}
+/*  FOOTER FINAL  */
